@@ -1,5 +1,6 @@
 {
     "string": [
-        {"id": "main-text", "text": "Javi & Saad Wedding"}
+        {"id": "main-title", "text": "Javi &amp; Saad Wedding"},
+        {"id": "date", "text": "July 31, 2019"}
     ]
 }

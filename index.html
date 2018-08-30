@@ -26,48 +26,70 @@
         <!--[endif]-->
     </head>
     <body>
-        <div class="cover">
-            <div class="cover-inner">
-                <div>
-                    <h1>Countdown to Javi &amp; Saad's <strong>Wedding</strong></h1>
-                    
-                    <div class="countdown jumbotron"> 
-                        <ul>
-                            <li><span id="days">000</span>days</li>
-                            <li><span id="hours">00</span>Hours</li>
-                            <li><span id="minutes">00</span>Minutes</li>
-                            <li><span id="seconds">00</span>Seconds</li>
-                        </ul>
-                    </div>
-                        
-                    
-                    <hr/>
+        <div class="on-the-right">
+            <h1 class="text" id="main-title">Main Title</h1>
+        </div>
+
+        <div class="lng-btn-ctn">
+                <div class="lng-btn" id="fr" onClick="SetLanguage(this.id)">
+                    <img class="img-fluid round-img" src="images/language_ch.svg" alt="Swiss Flag"/>
                 </div>
-                <div class="flag-container">
-                    <div class="flag-container-inner">
-                        <a class="flag" id="fr" onclick="">
-                            <img class="img-fluid" src="images/language_ch.svg" alt="Swiss Flag"/>
-                            <p>FR</p>
-                        </a>
-                        <a class="flag" id="en" onclick="">
-                            <img class="img-fluid" src="images/language_us.svg" alt="United States Flag"/>
-                            <p>EN</p>
-                        </a>
-                        <a class="flag" id="es" onclick="">
-                            <img class="img-fluid" src="images/language_cl.svg" alt="Chilean Flag"/>
-                            <p>ES</p>
-                        </a>
-                        <a class="flag" id="de" onclick="">
-                            <img class="img-fluid" src="images/language_de.svg" alt="German Flag"/>
-                            <p>DE</p>
-                        </a>
+                <div class="lng-btn" id="en" onClick="SetLanguage(this.id)">
+                    <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
+                </div>
+                <div class="lng-btn" id="es" onClick="SetLanguage(this.id)">
+                    <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
+                </div>
+                <div class="lng-btn" id="de" onClick="SetLanguage(this.id)">
+                    <img class="img-fluid round-img" src="images/language_de.svg" alt="German Flag"/>
+                </div>
+        </div>
+
+        <div class="absolute full-move">
+            <div class="cover">
+                <div class="cover-inner">
+                    <div>
+                        <h1>Countdown to Javi &amp; Saad's <strong>Wedding</strong></h1>
+                        
+                        <div class="countdown jumbotron half-move"> 
+                            <ul>
+                                <li><span id="days">000</span>days</li>
+                                <li><span id="hours">00</span>Hours</li>
+                                <li><span id="minutes">00</span>Minutes</li>
+                                <li><span id="seconds">00</span>Seconds</li>
+                            </ul>
+                        </div>
+                            
+                        
+                        <hr/>
+                    </div>
+                    <div class="flag-container">
+                        <div class="flag-container-inner">
+                            <a class="flag" id="fr" onClick="LanguageClickEventHandler(this.id)">
+                                <img class="img-fluid round-img" src="images/language_ch.svg" alt="Swiss Flag"/>
+                                <p>FR</p>
+                            </a>
+                            <a class="flag" id="en" onClick="LanguageClickEventHandler(this.id)">
+                                <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
+                                <p>EN</p>
+                            </a>
+                            <a class="flag" id="es" onClick="LanguageClickEventHandler(this.id)">
+                                <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
+                                <p>ES</p>
+                            </a>
+                            <a class="flag" id="de" onClick="LanguageClickEventHandler(this.id)">
+                                <img class="img-fluid round-img" src="images/language_de.svg" alt="German Flag"/>
+                                <p>DE</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+
+        
+
+        <script src="js/jquery-3.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
