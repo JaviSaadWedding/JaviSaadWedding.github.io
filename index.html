@@ -30,19 +30,24 @@
             <h1 class="text" id="main-title">Main Title</h1>
         </div>
 
-        <div class="lng-btn-ctn">
-                <div class="lng-btn" id="fr" onClick="SetLanguage(this.id)">
-                    <img class="img-fluid round-img" src="images/language_ch.svg" alt="Swiss Flag"/>
-                </div>
-                <div class="lng-btn" id="en" onClick="SetLanguage(this.id)">
-                    <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
-                </div>
-                <div class="lng-btn" id="es" onClick="SetLanguage(this.id)">
-                    <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
-                </div>
-                <div class="lng-btn" id="de" onClick="SetLanguage(this.id)">
-                    <img class="img-fluid round-img" src="images/language_de.svg" alt="German Flag"/>
-                </div>
+        <div id="container-floating">
+            <div class="nd5 nds" id="fr" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
+                <img class="img-fluid round-img" src="images/language_ch.svg" alt="Swiss Flag"/>
+            </div>
+            <div class="nd4 nds" id="en" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
+                <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
+            </div>
+            <div class="nd3 nds" id="es" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
+                <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
+            </div>
+            <div class="nd1 nds" id="de" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
+                <img class="img-fluid round-img" src="images/language_de.svg" alt="German Flag"/>
+            </div>
+            
+            <div id="floating-button" data-toggle="tooltip" data-placement="left">
+                <p class="plus text" id="language">XX</p>
+            </div>
+            
         </div>
 
         <div class="absolute full-move">
