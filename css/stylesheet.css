@@ -9,14 +9,14 @@ hr {
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     height: inherit;
     width: inherit;
 }
 
 h1 {
-    font-family: 'Grand Hotel', cursive;
+    font-family: 'Coming Soon', cursive;
     /*font-family: 'Butterfly Kids', cursive;*/
     font-size: 80px;
 }
@@ -83,11 +83,11 @@ strong {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-5%);
     transform: translateX(-50%);
-    -webkit-transition: transform 1s ease-in-out;
-    -moz-transition: transform 1s ease-in-out;
-    -ms-transition: transform 1s ease-in-out;
-    -o-transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    -moz-transition: transform .6s ease-in-out;
+    -ms-transition: transform .6s ease-in-out;
+    -o-transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
 }
 
 .full-move-to-left {
@@ -96,11 +96,11 @@ strong {
     -ms-transform: translateX(-105%);
     -o-transform: translateX(-105%);
     transform: translateX(-105%);
-    -webkit-transition: transform 1s ease-in-out;
-    -moz-transition: transform 1s ease-in-out;
-    -ms-transition: transform 1s ease-in-out;
-    -o-transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    -moz-transition: transform .6s ease-in-out;
+    -ms-transition: transform .6s ease-in-out;
+    -o-transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
 }
 
 .cover-inner {

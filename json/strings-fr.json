@@ -1,6 +1,8 @@
 {
     "string": [
         {"id": "main-title", "text": "Le <strong>Mariage</strong> de Javi &amp; Saad"},
-        {"id": "date", "text": "31 Juillet 2019"}
+        {"id": "date", "text": "31 Juillet 2019"},
+        {"id": "javi-stupide", "text": "t'es conne ou quoi?!"},
+        {"id": "language", "text": "FR"}
     ]
 }
