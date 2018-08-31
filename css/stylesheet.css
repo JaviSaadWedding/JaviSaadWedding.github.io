@@ -16,9 +16,13 @@ body {
 }
 
 h1 {
-    font-family: 'Grand Hotel', cursive;
+    font-family: 'Coming Soon', cursive;
     /*font-family: 'Butterfly Kids', cursive;*/
     font-size: 80px;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .lng-btn-ctn {
@@ -261,17 +265,9 @@ strong {
     cursor: pointer;
 }
   
-.nd1{
-    right: 40px;
-    bottom: 120px;
-    animation-delay: 0.2s;
-      animation: bounce-out-nds 0.3s linear;
-    animation-fill-mode:  forwards;
-}
-  
 .nd3{
     right: 40px;
-    bottom: 180px;
+    bottom: 120px;
     animation-delay: 0.15s;
       animation: bounce-out-nds 0.15s linear;
     animation-fill-mode:  forwards;
@@ -279,7 +275,7 @@ strong {
   
 .nd4{
     right: 40px;
-    bottom: 240px;
+    bottom: 180px;
     animation-delay: 0.1s;
       animation: bounce-out-nds 0.1s linear;
     animation-fill-mode:  forwards;
@@ -288,7 +284,7 @@ strong {
 .nd5{
     background-size: 100%;
     right: 40px;
-    bottom: 300px;
+    bottom: 240px;
     animation-delay: 0.08s;
     animation: bounce-out-nds 0.1s linear;
     animation-fill-mode:  forwards;
