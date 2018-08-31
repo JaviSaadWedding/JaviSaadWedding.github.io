@@ -3,26 +3,52 @@ html {
     width: 100%;
 }
 
-hr {
-    width: 00%;
-}
-
 body {
     overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #f2f1ed;
+    text-align: justify;
     height: inherit;
     width: inherit;
 }
 
-h1 {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Coming Soon', cursive;
-    /*font-family: 'Butterfly Kids', cursive;*/
-    font-size: 80px;
 }
 
-p {
-    font-family: 'Open Sans Condensed', sans-serif;
+strong {
+    color: #cc3333;
+    font-weight: 500;
+}
+
+.accent {
+    color: #cc3333;
+}
+
+.icon {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.number {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.full-height {
+    min-height: 100%;
+}
+
+.countdown {
+    margin: 3% 0;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.countdown h1, .countdown p {
+    margin: 0%;
 }
 
 .lng-btn-ctn {
@@ -39,13 +65,6 @@ p {
     height: 30px;
 }
 
-.on-the-right {
-}
-
-strong {
-    color: #cc3333;
-    font-weight: 500;
-}
 
 .absolute{
     position: fixed;
@@ -62,23 +81,8 @@ strong {
     -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
 }
 
-.cover {
-    background-position: center;
-    background-size: cover;
-    display: table;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    
-}
-
-.jumbotron {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
-    -wbekit-box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
-    -o-box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
-    margin: 30px 0px 0px 0px;
+.margin-10 {
+    padding: 0% 10% 0% 10%;
 }
 
 .half-move-to-left {
@@ -107,14 +111,6 @@ strong {
     transition: transform .6s ease-in-out;
 }
 
-.cover-inner {
-    display: table-cell;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .flag-container {
     text-align: center;
     display: flex;
@@ -133,7 +129,7 @@ strong {
 }
 
 .flag img {
-    width: 80px;
+    width: 60px;
     cursor: pointer;
 }
 
@@ -170,35 +166,10 @@ strong {
     padding: 0;
   }
   
-  .countdown {
-    padding: 50px;
-    text-align: center;
-  }
-  .countdown span {
-    color: #cc3333;
-  }
-  
-  .countdown li {
-      vertical-align: middle;
-    
-  }
-
   h1 {
     font-weight: normal;
   }
   
-  li {
-    display: inline-block;
-    list-style-type: none;
-    text-transform: uppercase;
-  }
-  
-  li span {
-    display: block;
-    font-size: 3em;
-    padding: 30px;
-    min-width: 150px;
-  }
 
 .text {
     opacity: 1; 

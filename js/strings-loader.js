@@ -39,5 +39,5 @@ function SetLanguage(lang){
 }
 
 $(document).ready(function() {    
-  
+    SetLanguage("fr");
 });

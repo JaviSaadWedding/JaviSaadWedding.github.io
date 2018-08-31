@@ -7,9 +7,8 @@
         <meta name="description" content="Javi &amp; Saad">
         <meta name="author" content="Javi Plaza">
 
-        <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Montserrat" rel="stylesheet">
         <title>Javi &amp; Saad</title>
-        <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Open+Sans+Condensed:300" rel="stylesheet">
 
         <!-- CSS -->
         <!-- Bootstrap -->
@@ -29,48 +28,119 @@
         <!--[endif]-->
     </head>
     <body>
-        <div class="on-the-right">
-            <div>
-                <p class="text" id="introduction_1">Cher invité,</p>
-                <p class="text" id="introduction_2">si tu es là, c'est parce que tu es important à nos yeux et parce que tu as accepté de passer une magnifique journée avec nous le <strong>31 juillet 2019</strong>.</p>
-                <p class="text" id="introduction_3">Le but de cette page web est de te guider et de te donner le plus d'informations possibles pour le jour J. Bien-sûr, nous restons à ton entière disposition si jamais tu as besoin d'aide pour quoi que ce soit qui n'apparaît pas ici.</p>
-                <p class="text" id="introduction_4">BONNE VISITE</p>
+        <!--<div class="absolute">
+            <img class="img-fluid" src="images/photo_saad_javi.jpg"/>
+        </div>-->
+        <div class="full-height row no-gutters align-items-center"> <!--Container full screen 100% de hauteur 100% de largeur-->
+            <div class="col-12 col-md-6 offset-md-6 text-center margin-10">
+                <img class="icon" src="images/the_married_ones.svg"/>
+                <h1 class="display-3">Javi &amp; Saad</h1>
+                <div class="countdown"> 
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-6 col-md-3">
+                            <h1 class="number accent"><span id="days">000</span></h1>
+                            <p class="text" id="days">Jours</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h1 class="number accent"><span id="hours">000</span></h1>
+                            <p class="text" id="hours">Heures</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h1 class="number accent"><span id="minutes">000</span></h1>
+                            <p class="text" id="minutes">Minutes</p>                                
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h1 class="number accent"><span id="seconds">000</span></h1>
+                            <p class="text" id="seconds">Secondes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flag-container">
+                    <div class="flag-container-inner">
+                        <a class="flag" id="fr" onClick="LanguageClickEventHandler(this.id)">
+                            <img class="img-fluid round-img" src="images/language_fr.svg" alt="French Flag"/>
+                            <p>FR</p>
+                        </a>
+                        <a class="flag" id="en" onClick="LanguageClickEventHandler(this.id)">
+                            <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
+                            <p>EN</p>
+                        </a>
+                        <a class="flag" id="es" onClick="LanguageClickEventHandler(this.id)">
+                            <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
+                            <p>ES</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h1 class="text" id="our-story_title">Notre histoire</h1>
-                <p class="text" id="our-story_1">Si bien nous n'avons pas la même histoire par rapport à notre première rencontre, ce qui est sûr, c'est qu'on a la même pour le jour où nous avons dédié plus de temps à l'autre : le 8 mai 2015. A partir de cette date, notre relation a commencé à s'enrichir de moments magiques jusqu'au fameu 29 juin 2018 où Saad a décidé de surprendre Javi en sortant la bague dans l'un des plus beaux endroits de la Suisse : Le Lavaux. Suite à cette demande, bien évidemment suivie d'un grand et émotif OUI, les préparations pour notre jour de mariage ont démarrés. Donc si tu es en train de lire ce site web, c'est que tu es vraiment important pour nous et on te remercie car tu es très certainement une personne spéciale à nos yeux.</p>
+        </div>
+
+        <div class="full-height row no-gutters align-items-center"> <!--Container full screen 100% de hauteur 100% de largeur-->
+            <div class="col-12 col-md-6 margin-10">
+                <div class="margin-10">    
+                    <h2 class="text" id="introduction_1">Cher invité,</h2>
+                    <p class="text" id="introduction_2">si tu es là, c'est parce que tu es important à nos yeux et parce que tu as accepté de passer une magnifique journée avec nous le <strong>31 juillet 2019</strong>.</p>
+                    <p class="text" id="introduction_3">Le but de cette page web est de te guider et de te donner le plus d'informations possibles pour le jour J. Bien-sûr, nous restons à ton entière disposition si jamais tu as besoin d'aide pour quoi que ce soit qui n'apparaît pas ici.</p>
+                    <p class="text" id="introduction_4">BONNE VISITE</p>
+                </div>
             </div>
-            
-            <div>
-                <h1 class="text" id="our-dream_title">Notre rêve</h1>
+        </div>
+
+        <div class="full-height row no-gutters align-items-center"> <!--Container full screen 100% de hauteur 100% de largeur-->
+            <div class="col-12 col-md-6 offset-md-6 margin-10">
+                <div class="margin-10">
+                    <h1 class="text" id="our-story_title">Notre histoire</h1>
+                    <p class="text" id="our-story_1">Si bien nous n'avons pas la même histoire par rapport à notre première rencontre, ce qui est sûr, c'est qu'on a la même pour le jour où nous avons dédié plus de temps à l'autre : le 8 mai 2015. A partir de cette date, notre relation a commencé à s'enrichir de moments magiques jusqu'au fameu 29 juin 2018 où Saad a décidé de surprendre Javi en sortant la bague dans l'un des plus beaux endroits de la Suisse : Le Lavaux. Suite à cette demande, bien évidemment suivie d'un grand et émotif OUI, les préparations pour notre jour de mariage ont démarrés. Donc si tu es en train de lire ce site web, c'est que tu es vraiment important pour nous et on te remercie car tu es très certainement une personne spéciale à nos yeux.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-height row no-gutters align-items-center"> <!--Container full screen 100% de hauteur 100% de largeur-->
+            <div class="col-12 col-md-6 margin-10">
+                <div class="margin-10">
+                    <h1 class="text" id="our-dream_title">Notre rêve</h1>
                     <p class="text" id="our-dream_1">Une chose que nous caractérise en tant que couple, c'est qu'on est des grands rêveurs. Ça nous arrive de nous poser dans un endroit cosy et de commencer à imaginer notre futur dans d'autres endroits de la terre, avec des projets et métiers improbables, avec une belle famille, etc. </p>
                     <p class="text" id="our-dream_2">Un de nos rêves a déjà été réalisé puisque nous voulions partager un foyer dans un endroit ou on se sent bien et on est heureux : bonne chose de faite, Vevey est un endroit magique.</p>
                     <p class="text" id="our-dream_3">Une chose dans laquelle nous rêvons très souvent c'est les différents voyages que nous voulons organiser. Bien sur, le tour du monde a toujours été une expérience que nous voulons réaliser, mais certainement nous la réaliserons à la retraite… on ne perd jamais espoir ;)</p>
                     <p class="text" id="our-dream_4">Pour être un peu plus réalistes, pour l’instant nous allons commencer par une lune de miel dans un endroit que nous avons toujours rêvé de visiter de part ses merveilleux paysages, riche culture et bien sûr : délicieuse nourriture. Ce pays est le Mexique et puis bon, vu que tout le monde pense que Saad est mexicain, faut bien qu'on aille voir ses racines ;)</p>
+                </div>
             </div>
-            
-            <div>
-                <h1 class="text" id="gift-idea_title">Idées cadeaux</h1>
+        </div>
+
+        <div class="full-height row no-gutters align-items-center"> <!--Container full screen 100% de hauteur 100% de largeur-->
+            <div class="col-12 col-md-6 offset-md-6 margin-10">
+                <div class="margin-10">
+                    <h1 class="text" id="gift-idea_title">Idées cadeaux</h1>
                     <p class="text" id="gift-idea_1">Si vous voulez nous offrir un cadeau et que vous ne savez pas quoi nous offrir, voici quelque idées sous cette rubrique.</p>
                     <p class="text" id="idees-cadeaux">Comme vous le savez certainement déjà, officiellement depuis juin 2017, nous habitons ensemble. Nous avons donc, plus ou moins tout ce qu'il nous faut dans notre petit nid. C'est pourquoi nous souhaitons financer notre voyage de noces au Mexique.</p>
                     <p class="text" id="gift-idea_2">Voici quelques idées où vous pourriez contribuer :</p>
-                    <p class="text" id="gift-idea_3">Une nuit dans un hôtel</p>
-                    <p class="text" id="gift-idea_4">Une activité</p>
-                    <p class="text" id="gift-idea_5">Un repas</p>
-                    <p class="text" id="gift-idea_6">Au billet d'avion</p>
-                    <p class="text" id="gift-idea_7">Aux déplacements d'un endroit A à B</p>
-                    <p class="text" id="gift-idea_8">Bien évidemment, nous allons toujours nous réjouir aussi d'un petit cadeau personnalisé si vous le préférez ainsi.</p>
+                    <ul>
+                        <li class="text" id="gift-idea_3">Une nuit dans un hôtel</li>
+                        <li class="text" id="gift-idea_4">Une activité</li>
+                        <li class="text" id="gift-idea_5">Un repas</li>
+                        <li class="text" id="gift-idea_6">Au billet d'avion</li>
+                        <li class="text" id="gift-idea_7">Aux déplacements d'un endroit A à B</li>
+                        <li class="text" id="gift-idea_8">Bien évidemment, nous allons toujours nous réjouir aussi d'un petit cadeau personnalisé si vous le préférez ainsi.</li>
+                    </ul>
+                </div>
             </div>
-            
-            <div>
-                <h1 class="text" id="d-day_title">Jour J</h1>
-                    <p class="text" id="d-day_1">Quoi ? Ils se marient ? Quoi ? Ils se marient en France en plus ? Pourquoi là-bas ?</p>
+        </div>
+
+        <div class="full-height row no-gutters align-items-center"> <!--Container full screen 100% de hauteur 100% de largeur-->
+            <div class="col-12 col-md-6">
+                <div class="margin-10">
+                    <h1 class="text" id="d-day_title">Jour J</h1>
+                    <h3 class="text" id="d-day_1">Quoi ? Ils se marient ? Quoi ? Ils se marient en France en plus ? Pourquoi là-bas ?</h3>
                     <p class="text" id="d-day_2">Et bien sachez que l'endroit que nous avons choisi est un lieu où nous nous sommes sentis comme chez nous. Et où nous pensons que le début d'une aventure en tant que mariés ne peut que partir de la meilleure façon possible.</p>
-                    <p class="text" id="d-day_3">D'accord, mais... on va dormir ou ?</p>
+                    <h3 class="text" id="d-day_3">D'accord, mais... on va dormir ou ?</h3>
                     <p class="text" id="d-day_4">Pour ceci, vous avez plusieurs possibilités, si vous voulez réserver un hotel vous êtes les bienvenus, si vous préférez réserver une chambre d'hôte, gîte, ect et que celle-ci est trop grande pour vous, n'hésitez pas à nous contacter (javi.saad.wedding@gmail.com) pour que nous organisons un petit groupe pour vous ou on vous donne le contact d’autres invités qui pourraient vous correspondre.</p>
-                    <p class="text" id="d-day_5">Euh, d'acc, en ce qui concerne le «dress-code» ça se passe comment ?</p>
+                    <h3 class="text" id="d-day_5">Euh, d'acc, en ce qui concerne le «dress-code» ça se passe comment ?</h3>
                     <p class="text" id="d-day_6">Le dress-code est plutôt élégant. Mesdames, Messieurs on vous attend avec votre meilleur(e) robe/ costume qui traine dans votre armoire ! Et oui, vous pourrez ENFIN ressortir cet habit que vous utilisez que dans «certaines occasions rares». On veut faire de belles photos, on compte sur vous !</p>
-                    <p class="text" id="d-day_7">Ok, on a tout, mais il va se passer quoi le jour J ?</p>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 margin-10">    
+                <div class="margin-10">
+                    <h3 class="text" id="d-day_7">Ok, on a tout, mais il va se passer quoi le jour J ?</h3>
                     <p class="text" id="d-day_8">Et bien, tout d'abord, voici l'adresse exacte du domaine ou nous nous donnerons rendez-vous à 16H30. (mettre une carte)</p>
                     <p class="text" id="d-day_9">17H00 - 18H00</p>
                     <p class="text" id="d-day_10">La cérémonie commencera à 17H00, s'il-vous plait, on vous demande d'être à l'heure, après ça sera que du bonheur et de l'amusement.</p>
@@ -82,15 +152,22 @@
                     <p class="text" id="d-day_16">Petite activité surprise</p>
                     <p class="text" id="d-day_17">22H00 – 5H00</p>
                     <p class="text" id="d-day_18">Que la soirée commence, on veut tous vous voir en train de vous déhancher sous votre musique préférée (n'hésitez pas à nous dire si jamais vous voulez absolument qu'une chanson fasse son apparition pendant la soirée)</p>
+                </div>
             </div>
-            
-            <div>
-                <h1 class="text" id="contact_title">Nous contacter</h1>
+        </div>
+
+    
+        <div class="full-height row no-gutters align-items-center text-center justify-content-center">
+            <div class="col-12 col-md-6 ">
+                <div class="margin-10">
+                    <h1 class="text" id="contact_title">Nous contacter</h1>
                     <p class="text" id="contact_1">javi.saad.wedding@gmail.com</p>
                     <p class="text" id="contact_2">Si vous voulez contacter que Javi par whatsapp : +41 79 898 45 55</p>
                     <p class="text" id="contact_3">Si vous voulez contacter que Saad par whatsapp : +41 78 825 50 87</p>
-            </div>
+                </div>
+            </div>  
         </div>
+
 
         <div id="container-floating">
             <div class="nd5 nds" id="fr" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
@@ -109,43 +186,7 @@
             
         </div>
 
-        <div class="absolute full-move">
-            <div class="cover">
-                <div class="cover-inner">
-                    <div>
-                        <h1>Javi &amp; Saad</h1>
-                        <div class="countdown jumbotron half-move"> 
-                            <ul>
-                                <li><span id="days">000</span>days</li>
-                                <li><span id="hours">00</span>Hours</li>
-                                <li><span id="minutes">00</span>Minutes</li>
-                                <li><span id="seconds">00</span>Seconds</li>
-                            </ul>
-                        </div>
-                        <hr/>
-                    </div>
-                    <div class="flag-container">
-                        <div class="flag-container-inner">
-                            <a class="flag" id="fr" onClick="LanguageClickEventHandler(this.id)">
-                                <img class="img-fluid round-img" src="images/language_fr.svg" alt="French Flag"/>
-                                <p>FR</p>
-                            </a>
-                            <a class="flag" id="en" onClick="LanguageClickEventHandler(this.id)">
-                                <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
-                                <p>EN</p>
-                            </a>
-                            <a class="flag" id="es" onClick="LanguageClickEventHandler(this.id)">
-                                <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
-                                <p>ES</p>
-                            </a>
-                        </div>
-                    </div>
-                     <div>
-                            <img src="images/photo_saad_javi.jpeg" alt="nous" title="nous" />
-                        </div>
-                </div>
-            </div>
-        </div>
+        
 
         
 
