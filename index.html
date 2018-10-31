@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,9 @@
         <meta name="description" content="Javi &amp; Saad">
         <meta name="author" content="Javi Plaza">
 
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <title>Javi &amp; Saad</title>
-
+        <link rel="shortcut icon" href="images/logo.png" type="image/png">
         <!-- CSS -->
         <!-- Bootstrap -->
         <link rel="stylesheet" 
@@ -22,244 +22,400 @@
         
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
+        <!--[if lt IE 9]-->
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <!--[endif]-->
     </head>
     <body>
-        
-        <nav id="navbar" class="navbar navbar-expand-md navbar-light navbar-right fixed-top navbar-custom">
-            <div class="navbar-header">
-                <div class="navbar-brand top menu-btn">
-                    <a href="#"><img alt="logo navigation bar" src="images/JaviAndSaad.svg"></a>
-                </div> <!--Navbar Brand-->
-            </div> <!--Navbar Header-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> <!--Navbar toggle-->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li id="intro-nav" class="nav-item scrolling-btn" data-id="#intro">
-                        <a class="nav-link text" id="intro-title" href="#cv-top">Introduction</a>
-                    </li>
-                    <li id="our-story-nav" class="nav-item scrolling-btn" data-id="#our-story">
-                        <a class="nav-link text" id="our-story-title" href="#our-story">Notre histoire</a>
-                    </li>
-                    <li id="our-dream-nav" class="nav-item scrolling-btn" data-id="#our-dream">
-                        <a class="nav-link text" id="our-dream-tilte" href="#our-dream">Notre rêve</a>
-                    </li>
-                    <li id="gift-ideas-nav" class="nav-item scrolling-btn" data-id="#gift-ideas">
-                        <a class="nav-link text" id="gift-ideas-tilte" href="#gift-ideas">Idées cadeaux</a>
-                    </li>
-                    <li id="d-day-nav" class="nav-item scrolling-btn" data-id="#d-day">
-                        <a class="nav-link text" id="d-day-tilte" href="#d-day">Jour j</a>
-                    </li>
-                    <li id="schedule-nav" class="nav-item scrolling-btn" data-id="#schedule">
-                        <a class="nav-link text" id="schedule-tilte" href="#schedule">Planning</a>
-                    </li>
-                    <li id="contact-nav" class="nav-item scrolling-btn" data-id="#contact">
-                        <a class="nav-link text" id="contact-title" href="#contact">Contact</a>
-                    </li>
-                </ul> <!--Navlinks-->
-            </div> <!--Navbar Collapse-->
-        </nav> <!--Navbar-->
-
-        <div class="full-height row no-gutters align-items-center home background-image" id="home"> 
-            <div class="col-12 col-md-6 offset-md-6 text-center horizontal-padding-10">
-                <div>
-                    <!--<img class="icon" src="images/wedding-rings.svg"/>-->
-                    <img class="logo" src="images/JaviAndSaad.svg"/>
-                    
-                    <!--<h1 class="display-4">Javi &amp; Saad</h1>-->
-                    <p class="text" id="date">31.07.2017</p>
-                </div>
-                <div class="countdown"> 
-                    <div class="row no-gutters align-items-center">
-                        <div class="col-4 col-sm-3 col-lg-2 offset-2 offset-sm-0 offset-lg-2">
-                            <h1 class="number accent"><span id="days">000</span></h1>
-                            <p class="text" id="days">Jours</p>
-                        </div>
-                        <div class="col-4 col-sm-3 col-lg-2">
-                            <h1 class="number accent"><span id="hours">000</span></h1>
-                            <p class="text" id="hours">Heures</p>
-                        </div>
-                        <div class="col-4 col-sm-3 col-lg-2 offset-2 offset-sm-0">
-                            <h1 class="number accent"><span id="minutes">000</span></h1>
-                            <p class="text" id="minutes">Minutes</p>                                
-                        </div>
-                        <div class="col-4 col-sm-3 col-lg-2">
-                            <h1 class="number accent"><span id="seconds">000</span></h1>
-                            <p class="text" id="seconds">Secondes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-container">
-                    <div class="flex-container-inner">
-                        <div>
-                            <img class="flag img-fluid round-img scrolling-btn" data-id="#intro" id="fr" onClick="LanguageClickEventHandler(this.id)"
-                                src="images/language_fr.svg" alt="French Flag"/>
-                            <p>FR</p>
-                        </div>
-                        <div>
-                            <img class="img-fluid round-img flag scrolling-btn" data-id="#intro" id="en" onClick="LanguageClickEventHandler(this.id)"
-                                src="images/language_us.svg" alt="United States Flag"/>
-                            <p>EN</p>
-                        </div>
-                        <div>
-                            <img class="img-fluid round-img flag scrolling-btn" data-id="#intro" id="es" onClick="LanguageClickEventHandler(this.id)"
-                                src="images/language_cl.svg" alt="Chilean Flag"/>
-                            <p>ES</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="full-height row no-gutters align-items-center intro background-image" id="intro">
-            <div class="col-12 col-md-6 horizontal-padding-10 vertical-padding-10">
-                <div class="horizontal-padding-10">    
-                    <h1 class="text display-4" id="intro-1">Cher Invité ou Chère Invitée,</h1>
-                    <hr/>
-                    <p class="text" id="intro-2">Si tu es là, c'est parce que tu es quelqu'un d'important à nos yeux et parce que tu as accepté de passer une magnifique journée avec nous le <strong>31 juillet 2019</strong>.</p>
-                    <p class="text" id="intro-3">Le but de cette page web est de te guider et de te donner le plus d'informations possibles pour le jour J. Bien-sûr, nous restons à ton entière disposition si jamais tu as besoin d'aide pour quoi que ce soit qui n'apparaît pas ici.</p>
-                    <p class="text" id="intro-4">BONNE VISITE</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-                <img src="images/ic_intro.svg" class="icon" alt="letter icon"/>
-            </div>
-        </div>
-
-        <div class="full-height row no-gutters align-items-center our-story background-image dark-background" id="our-story"> <!--Container full screen 100% de hauteur 100% de largeur-->
-            <div class="col-12 col-md-6 text-center">
-                <img src="images/ic_our-story.svg" class="icon" alt="rings icon"/>
-            </div>
-            <div class="col-12 col-md-6 horizontal-padding-10 vertical-padding-10">
-                <div class="horizontal-padding-10">
-                    <h1 class="text display-4" id="our-story-title">Notre histoire</h1>
-                    <hr/>
-                    <p class="text" id="our-story-1">Si nous ne sommes pas d'accord sur l'histoire de notre première rencontre, ce qui est sûr, c'est que nous avons la même pour le jour où nous avons consacré plus de temps l'un à l'autre : le <strong>8 mai 2015</strong>.</p>
-                    <p class="text" id="our-story-2">A partir de cette date, notre relation a commencé à s'enrichir de moments magiques jusqu'au fameux <strong>29 juin 2018</strong> où Saad a décidé de surprendre Javi en sortant la bague dans l'un des plus beaux endroits de Suisse : Le Lavaux.</p>
-                    <p class="text" id="our-story-3">Suite à cette demande, bien évidemment suivie d'un grand <strong>OUI</strong> emplit d'émotion, les préparations de notre mariage ont démarrés. Donc si tu es en train de lire ce site web, c'est que tu es vraiment important pour nous et on te remercie car tu es très certainement une personne spéciale à nos yeux.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="full-height row no-gutters align-items-center our-dream background-image dark-background" id="our-dream"> <!--Container full screen 100% de hauteur 100% de largeur-->
-            <div class="col-12 col-md-6 horizontal-padding-10  vertical-padding-10">
-                <div class="horizontal-padding-10">
-                    <h1 class="text display-4" id="our-dream-title">Notre rêve</h1>
-                    <hr/>
-                    <p class="text" id="our-dream-1">Une chose que nous caractérise en tant que couple, c'est qu'on est des grands rêveurs. Ça nous arrive de nous poser dans un endroit cosy et de commencer à imaginer notre futur dans d'autres endroits de la terre, avec des projets et métiers improbables, avec une belle famille, etc. </p>
-                    <p class="text" id="our-dream-2">Un de nos rêves a déjà été réalisé puisque nous voulions partager un foyer dans un endroit ou on se sent bien et on est heureux : bonne chose de faite, Vevey est un endroit magique.</p>
-                    <p class="text" id="our-dream-3">Une chose dans laquelle nous rêvons très souvent c'est les différents voyages que nous voulons organiser. Bien sur, le tour du monde a toujours été une expérience que nous voulons réaliser, mais certainement nous la réaliserons à la retraite… on ne perd jamais espoir ;)</p>
-                    <p class="text" id="our-dream-4">Pour être un peu plus réalistes, pour l’instant nous allons commencer par une lune de miel dans un endroit que nous avons toujours rêvé de visiter de part ses merveilleux paysages, riche culture et bien sûr : délicieuse nourriture. Ce pays est le Mexique et puis bon, vu que tout le monde pense que Saad est mexicain, faut bien qu'on aille voir ses racines ;)</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-                <img src="images/ic_our-dream.svg" class="icon" alt="travel icon"/>
-            </div>
-        </div>
-
-        <div class="full-height row no-gutters align-items-center gift-ideas background-image dark-background" id="gift-ideas"> <!--Container full screen 100% de hauteur 100% de largeur-->
-            <div class="col-12 col-md-6 text-center">
-                <img src="images/ic_gift-ideas.svg" class="icon" alt="gift icon"/>
-            </div>
-            <div class="col-12 col-md-6 horizontal-padding-10 vertical-padding-10">
-                <div class="horizontal-padding-10">
-                    <h1 class="text display-4" id="gift-ideas-title">Idées cadeaux</h1>
-                    <hr/>
-                    <p class="text" id="gift-ideas-1">Si vous voulez nous offrir un cadeau et que vous ne savez pas quoi nous offrir, voici quelque idées sous cette rubrique.</p>
-                    <p class="text" id="gift-ideas-2">Comme vous le savez certainement déjà, officiellement depuis juin 2017, nous habitons ensemble. Nous avons donc, plus ou moins tout ce qu'il nous faut dans notre petit nid. C'est pourquoi nous souhaitons financer notre voyage de noces au Mexique.</p>
-                    <p class="text" id="gift-ideas-3">Voici quelques idées où vous pourriez contribuer :</p>
-                    <ul class="horizontal-padding-10">
-                        <li class="text" id="gift-1">Une nuit dans un hôtel</li>
-                        <li class="text" id="gift-2">Une activité</li>
-                        <li class="text" id="gift-3">Un repas</li>
-                        <li class="text" id="gift-4">Au billet d'avion</li>
-                        <li class="text" id="gift-5">Aux déplacements d'un endroit A à B</li>
-                        <li class="text" id="gift-6">Bien évidemment, nous allons toujours nous réjouir aussi d'un petit cadeau personnalisé si vous le préférez ainsi.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="full-height row no-gutters align-items-center d-day background-image dark-background" id="d-day"> <!--Container full screen 100% de hauteur 100% de largeur-->
-            
-            <div class="col-12 col-md-6 vertical-padding-10">
-                <div class="horizontal-padding-10">
-                    <h1 class="text display-4" id="d-day-title">Jour J</h1>
-                    <hr/>
-                    <h2 class="text" id="d-day-1">Quoi ? Ils se marient ? Quoi ? Ils se marient en France en plus ? Pourquoi là-bas ?</h2>
-                    <p class="text" id="d-day-2">Et bien sachez que l'endroit que nous avons choisi est un lieu où nous nous sommes sentis comme chez nous. Et où nous pensons que le début d'une aventure en tant que mariés ne peut que partir de la meilleure façon possible.</p>
-                    <h2 class="text" id="d-day-3">D'accord, mais... on va dormir ou ?</h2>
-                    <p class="text" id="d-day-4">Pour ceci, vous avez plusieurs possibilités, si vous voulez réserver un hotel vous êtes les bienvenus, si vous préférez réserver une chambre d'hôte, gîte, ect et que celle-ci est trop grande pour vous, n'hésitez pas à nous contacter (javi.saad.wedding@gmail.com) pour que nous organisons un petit groupe pour vous ou on vous donne le contact d’autres invités qui pourraient vous correspondre.</p>
-                    <h2 class="text" id="d-day-5">Euh, d'acc, en ce qui concerne le «dress-code» ça se passe comment ?</h2>
-                    <p class="text" id="d-day-6">Le dress-code est plutôt élégant. Mesdames, Messieurs on vous attend avec votre meilleur(e) robe/ costume qui traine dans votre armoire ! Et oui, vous pourrez ENFIN ressortir cet habit que vous utilisez que dans «certaines occasions rares». On veut faire de belles photos, on compte sur vous !</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-                <!-- <img src="images/ic_d-day.svg" class="icon" alt="cake icon"/>-->
-                <iframe src="https://snazzymaps.com/embed/99836" width="100%" height="600px" style="border:none;"></iframe>
-            </div>
-        </div>
-        <div class="full-height row no-gutters align-items-center schedule background-image dark-background" id="schedule">
-            <div class="col-12 col-md-6 horizontal-padding-10 vertical-padding-10">
-                <div id="map"></div>
-            </div>
-            <div class="col-12 col-md-6 horizontal-padding-10 vertical-padding-10">    
-                <div class="horizontal-padding-10">
-                    <h2 class="text" id="schedule-1">Ok, on a tout, mais il va se passer quoi le jour J ?</h2>
-                    <hr/>
-                    <p class="text" id="schedule-2">Et bien, tout d'abord, voici l'adresse exacte du domaine ou nous nous donnerons rendez-vous à 16H30. (mettre une carte)</p>
-                    <h3 class="text" id="schedule-3">17H00 - 18H00</h3>
-                    <p class="text" id="schedule-4">La cérémonie commencera à 17H00, s'il-vous plait, on vous demande d'être à l'heure, après ça sera que du bonheur et de l'amusement.</p>
-                    <h3 class="text" id="schedule-5">18H00 - 19H00</h3>
-                    <p class="text" id="schedule-6">Après ce moment spécial on vous invitera a commencer la fête avec un petit apéro où vous pourrez faire plusieurs activités, manger et boire.</p>
-                    <h3 class="text" id="schedule-7">19H00 - 21H00</h3>
-                    <p class="text" id="schedule-8">Se suivent ensuite 2 heures de repas</p>
-                    <h3 class="text" id="schedule-9">21H00 – 22H00</h3>
-                    <p class="text" id="schedule-10">Petite activité surprise</p>
-                    <h3 class="text" id="schedule-11">22H00 – 5H00</h3>
-                    <p class="text" id="schedule-12">Que la soirée commence, on veut tous vous voir en train de vous déhancher sous votre musique préférée (n'hésitez pas à nous dire si jamais vous voulez absolument qu'une chanson fasse son apparition pendant la soirée)</p>
-                </div>
-            </div>
-        </div>
-
-    
-        <div class="full-height row no-gutters align-items-center text-center justify-content-center contact background-image" id="contact">
-            <div class="col-12 col-md-6 vertical-padding-10">
-                <div class="horizontal-padding-10">
-                    <h1 class="text display-4" id="contact-title">Nous contacter</h1>
-                    <hr class="margin-auto"/>
-                    <p class="text" id="contact-1">javi.saad.wedding@gmail.com</p>
-                    <p class="text" id="contact-2">Si vous voulez contacter que Javi par whatsapp : +41 79 898 45 55</p>
-                    <p class="text" id="contact-3">Si vous voulez contacter que Saad par whatsapp : +41 78 825 50 87</p>
-                </div>
-            </div>  
-        </div>
-
-
         <div id="container-floating">
             <div class="nd5 nds" id="fr" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
-                <img class="img-fluid round-img" src="images/language_fr.svg" alt="French Flag"/>
+                <img class="img-fluid flag" src="images/language_fr.svg" alt="French Flag"/>
             </div>
             <div class="nd4 nds" id="en" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
-                <img class="img-fluid round-img" src="images/language_us.svg" alt="United States Flag"/>
+                <img class="img-fluid flag" src="images/language_en.svg" alt="Union Jack"/>
             </div>
             <div class="nd3 nds" id="es" onClick="SetLanguage(this.id)" data-toggle="tooltip" data-placement="left">
-                <img class="img-fluid round-img" src="images/language_cl.svg" alt="Chilean Flag"/>
+                <img class="img-fluid flag" src="images/language_es.svg" alt="Spanish Flag"/>
             </div>
             
             <div id="floating-button" class="background-accent" data-toggle="tooltip" data-placement="left">
                 <p class="plus text" id="language">FR</p>
             </div>
-            
+        </div>
+
+        <div id="overlay-btn" class="d-fixed d-sm-none overlay-btn overlay-click">
+            <svg version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;">
+                <polygon fill="#FFFFFF" points="7.5,27.5 20,40 32.5,27.5 20,27.5">
+                    <animate id="shape-to-cross-1" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="17.5,21.5 17.5,35 22.5,35 22.5,21.5"/>
+                    <animate id="white-to-green-1" begin="indefinite" fill="freeze" attributeName="fill" dur="200ms"
+                        to="#468E80"/>
+                    <animate id="cross-to-shape-1" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="7.5,27.5 20,40 32.5,27.5 20,27.5 "/>
+                    <animate id="green-to-white-1" begin="indefinite" fill="freeze" attributeName="fill" dur="200ms"
+                        to="#FFFFFF"/>
+                </polygon>
+                <polygon fill="#FFFFFF" points="5,25 0,20 5,15 35,15 40,20 35,25">
+                    <animate id="shape-to-cross-2" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="5,22.5 5,17.5 20,17.5 35,17.5 35,22.5, 20,22.5"/>
+                    <animate id="white-to-green-2" begin="indefinite" fill="freeze" attributeName="fill" dur="200ms"
+                        to="#468E80"/>
+                    <animate id="cross-to-shape-2" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="5,25 0,20 5,15 35,15 40,20 35,25"/>
+                    <animate id="green-to-white-2" begin="indefinite" fill="freeze" attributeName="fill" dur="200ms"
+                        to="#FFFFFF"/>
+                </polygon>
+                <polygon fill="#FFFFFF" points="7.5,12.5 20,0 32.5,12.5 20,12.5 ">
+                    <animate id="shape-to-cross-3" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="17.5,5 22.5,5 22.5,18.5 17.5,18.5"/>
+                    <animate id="white-to-green-3" begin="indefinite" fill="freeze" attributeName="fill" dur="200ms"
+                        to="#468E80"/>
+                    <animate id="cross-to-shape-3" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="7.5,12.5 20,0 32.5,12.5 20,12.5 "/>
+                    <animate id="green-to-white-3" begin="indefinite" fill="freeze" attributeName="fill" dur="200ms"
+                        to="#FFFFFF"/>
+                </polygon>
+            </svg>
+        </div>
+
+        <div id="overlay-menu" class="overlay-menu">
+            <div class="d-block d-sm-none overlay-label-container">
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#home" id="home-overlay">
+                    <p class="text-truncate text" id="home-title">Accueil</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#invite" id="invite-overlay">
+                    <p class="text-truncate text" id="invite-title">L'Invitation</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#our-story" id="our-story-overlay">
+                    <p class="text-truncate text" id="our-story-title">Notre Histoire</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#wedding" id="wedding-overlay">
+                    <p class="text-truncate text" id="wedding-title">Le Mariage</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#d-day" id="d-day-overlay">
+                    <p class="text-truncate text" id="d-day-title">Le Jour J</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#our-dream" id="our-dream-overlay">
+                    <p class="text-truncate text" id="our-dream-title">Notre Rêve</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#gifts" id="gifts-overlay">
+                    <p class="text-truncate text" id="gifts-title">La Lune de Miel</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#contact" id="contact-overlay">
+                    <p class="text-truncate text" id="contact-title">Contact</p>
+                </div>
+            </div>
         </div>
 
         
 
+        <div class="side-navbar d-none d-sm-flex">
+            <div class="side-navbar-inner">
+                <div class="item-container item scrolling-btn" data-id="#home" id="home-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="home-title">Accueil</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+                
+                <div class="item-container item scrolling-btn" data-id="#invite" id="invite-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="invite-title">L'Invitation</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+
+                <div class="item-container item scrolling-btn" data-id="#our-story" id="our-story-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="our-story-title">Notre Histoire</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+
+                <div class="item-container item scrolling-btn" data-id="#wedding" id="wedding-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="wedding-title">Le Mariage</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+                
+                <div class="item-container item scrolling-btn" data-id="#d-day" id="d-day-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="d-day-title">Le Jour J</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+    
+                <div class="item-container item scrolling-btn" data-id="#our-dream" id="our-dream-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="our-dream-title">Notre Rêve</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+
+                <div class="item-container item scrolling-btn" data-id="#gifts" id="gifts-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="gifts-title">La Lune de Miel</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+                
+                <div class="item-container item scrolling-btn" data-id="#contact" id="contact-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="contact-title">Contact</div>            
+                </div>
+            </div>
+        </div>
+
+        <div class="h-full d-none d-sm-flex" id="home">
+            <div class="h-full-inner flex">
+                <div class="cover">
+                    <div class="cover-inner">
+                        <img class="img-fluid" src="images/icon.svg"/>
+                        <div class="btn-container h-margin-auto">    
+                            <div class="angle-btn scrolling-btn" data-id="#invite">
+                                <p class="text" id="next">Suivant</p>
+                            </div> <!--end of angle button-->
+                        </div> <!--btn-container-->
+                    </div> <!--end of cover inner-->
+                </div> <!--end of cover-->
+            </div> <!--end of inner-->
+        </div> <!--end of home-->
+
+        <div class="h-full d-flex d-sm-none" id="home-mobile">
+                <div class="h-full-inner dimmer bottom">
+                    <div class="cover">
+                        <div class="cover-inner">
+                            <img class="img-fluid" src="images/icon.svg"/>
+                            <div class="btn-container h-margin-auto">    
+                                <div class="angle-btn scrolling-btn" data-id="#invite">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button-->
+                            </div> <!--btn-container-->
+                        </div> <!--end of cover inner-->
+                    </div> <!--end of cover-->
+                </div> <!--end of inner-->
+            </div> <!--end of home-->
+        
+        <div class="h-full" id="invite">
+            <div class="h-full-inner dimmer right">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-2 offset-md-4 offset-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-right" id="invite-title">L'invitation</h1>
+                            <p class="text" id="invite-1">Si tu es là, c'est parce que tu es quelqu'un d'important•e à nos yeux et parce que tu as accepté de passer une magnifique journée avec nous le 31 juillet 2019.</p>
+                            <p class="text" id="invite-2">Le but de cette page web est de te guider et de te donner le plus d'informations possibles pour le jour J. Bien-sûr, nous restons à ton entière disposition si jamais tu as besoin d'aide pour quoi que ce soit qui n'apparaît pas ici.</p>
+                            <p class="text" id="invite-3">Bonne Visite !</p>
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#our-story">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button-->  
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin/padding 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of intro-->
+
+        <div class="h-full" id="our-story">
+            <div class="h-full-inner dimmer left">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-left" id="our-story-title">Notre Histoire</h1>
+                            <p class="text" id="our-story-1">Lorsque l’on fréquente le même groupe d’amis, il arrive que l’on se croise, on s’aperçoit, on se remarque, on s’apprécie, on se rapproche. Si nous ne sommes pas d'accord sur le jour de notre première rencontre, le 8 mai 2015, marque le début de notre relation.</p>
+                            <p class="text" id="our-story-2">Depuis ce jour nous avons vécu des moments grandioses, emplis d’émotions, de voyages et de bonheur. Nous nous sommes installés ensemble à Vevey, un endroit magique, où l’on se sent bien et heureux. </p>
+                            <p class="text" id="our-story-3">Le 29 juin 2018, Saad a fait sa demande dans l'un des plus beaux endroits de Suisse : Le Lavaux. Cette demande, à bien évidemment été suivie d'un grand OUI emplit d'émotion. </p>
+                            <p class="text" id="our-story-4">Ce qui nous amène au 31 juillet 2019, date à laquelle nous avons décidé de célébrer notre mariage avec la famille et les amis. Et si tu es en train de lire ce texte c’est que tu fais partie de ces catégories, et que tu es important•e à nos yeux. Alors continue ta lecture pour savoir ce qui t’attends pour cette journée spéciale.</p>
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#wedding">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button--> 
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin/padding 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of our story-->
+
+        <div class="h-full" id="wedding">
+            <div class="h-full-inner dimmer right">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-right" id="wedding-title">Le Mariage</h1>
+                            <h4 class="text text-center text-sm-right" id="wedding-1">Quoi ?! Ils se marient ?! ...En France en plus ?!</h4>
+                            <h5 class="text text-center text-sm-right" id="wedding-2">Mais pourquoi là-bas ? Je croyais qu’ils vivaient en Suisse ?</h5>
+                            <p class="text" id="wedding-3">Tu ne te trompes pas, nous vivons bien en Suisse, mais ça ne nous à pas empêché de chercher le cadre parfait pour cet évènment. Et crois nous sur parole, tu ne vas pas être décu par notre choix, alors enfile ta plus belle tenue et rejoins nous le 31 Juillet 2019.</p>
+                            <h4 class="text text-center text-sm-right" id="wedding-4">Parce qu’en plus il faut faire un effort vestimentaire ?</h4>
+                            <h5 class="text text-center text-sm-right" id="wedding-5">Non mais je rêve...</h5>
+                            <p class="text" id="wedding-6">Non non, tu ne rêves pas. Nous aimerions faire de belles photos avec nos invité•es et si ça nous amuse beaucoup de t’imaginer habillé•e comme un sac, nous ne sommes pas sûr que tu ais très envie d’être celui•celle dont on se moquera, quand on regardera les photos dans 20 ans. Alors fait un petit effort s’il te plaît...</p>
+                            <h4 class="text text-center text-sm-right" id="wedding-7">OK, Ok... Mais ça ne me dit pas où je vais pouvoir dormir tout ça !</h4>
+                            <p class="text" id="wedding-8">Ah ça tombe bien que tu dises ça ! Nous avons travaillé pour toi ! Si tu contines d’explorer le site, tu vas tomber sur une carte, préparée avec amour (et beaucoup de patience), qui répertorie tous les endroits, à proximité du mariage, où tu pourras reposer tes jambes, après avoir enflammé le dance floor</p>
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#map">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button--> 
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin/padding 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of wedding-->
+
+        <div class="h-full" id="map">
+            <div class="h-full-inner dimmer middle">
+                    <div class="row mw-100 no-gutters align-items-center margin-4">
+                    <div class="col">
+                        <div class="margin-4">
+                            <h1 class="text text-center text-sm-right" id="map-title">La Carte des Logements</h1>
+                            <iframe id="frame" src="https://snazzymaps.com/embed/99836" width="100%" ></iframe>
+                        </div>
+                        <div class="btn-container">    
+                            <div class="angle-btn scrolling-btn" data-id="#d-day">
+                                <p class="text" id="next">Suivant</p>
+                            </div> <!--end of angle button--> 
+                        </div> <!--end of button container-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of wedding-->
+
+        <div class="h-full" id="d-day">
+            <div class="h-full-inner dimmer left">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-left" id="d-day-title">Le Jour J</h1>
+                            <h4 class="text text-center text-sm-left" id="d-day-1">Ok on sait où dormir, mais il a lieu où ce mariage ? Et il se passe quoi le jour J ?</h4>
+                            <p class="text" id="d-day-2">Et bien, tout d'abord, nous vous donnons rendez-vous à 16H30 au Château de Séréville (Les Charlots, 89150 La Belliole).</p>
+                            <h4 class="text text-center text-sm-left" id="d-day-3">17H00 • 18H00</h4>
+                            <p class="text" id="d-day-4">La cérémonie commencera à 17H00, s'il-vous plait, on vous demande d'être à l'heure, après ça sera que du bonheur.</p>
+                            <h4 class="text text-center text-sm-left" id="d-day-5">18H00 • 19H00</h4>
+                            <p class="text" id="d-day-6">Après ce moment spécial place à la fête. Et pour éviter tout claquage, on commencera avec un petit apéro durant lequel auront lieu plusieurs activités, et où vous pourrez boire et vous mettre en appétit.</p>
+                            <h4 class="text text-center text-sm-left" id="d-day-7">19H00 • 21H00</h4>
+                            <p class="text" id="d-day-8">Place ensuite à 2 heures de repas.</p>
+                            <h4 class="text text-center text-sm-left" id="d-day-9">21H00 • 22H00</h4>
+                            <p class="text" id="d-day-10">Petite activité surprise.</p>
+                            <h4 class="text text-center text-sm-left" id="d-day-11">22H00 – 5H00</h4>
+                            <p class="text" id="d-day-12">Que la soirée commence, on veut tous vous voir en train de vous déhancher jusqu’au boût de la nuit.</p>
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#our-dream">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button--> 
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of d day-->
+
+        <div class="h-full" id="our-dream">
+            <div class="h-full-inner dimmer right">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-right" id="our-dream-title">Notre Rêve</h1>
+                            <p class="text" id="our-dream-1">Comme tu le sais sûrement, nous sommes de grands rêveurs. On aime souvant imaginer notre futur, s’imaginer à exercer des métiers improbables, ou à réaliser des projets incroyables, à l’autre boût du monde. Ou plus simplement à contruire un grande et belle famille</p>
+                            <p class="text" id="our-dream-2">Un de nos rêves récurrent, est de faire le tour du monde. Contrairement à Phileas Fogg et Jean Passepartout il nous faudra certainement un peu plus de 80 jours pour le réaliser.  On devra donc peut-être attendre la retraite… mais on ne perd pas espoir ;)</p>
+                            <p class="text" id="our-dream-3">En attendant, et comme il faut bien commencer quelque part, nous avons choisi une destination, qui nous faisait rêver depuis longtemps, pour notre lune de miel. De merveilleux paysages, une culture riche et bien sûr un nourriture délicieuse, c’est le Mexique qui nous a convaincu. Et puis comme tout le monde pense que Saad est mexicain, Il faut bien qu'on aille vérifier par nous même s’il n’a pas quelques racines là bas</p>    
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#gifts">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button--> 
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of our dream-->
+
+        <div class="h-full" id="gifts">
+            <div class="h-full-inner dimmer left">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-left" id="gifts-title">Lune de Miel</h1>
+                            <p class="text" id="gifts-1">Comme vous le savez certainement déjà, nous habitons ensemble depuis juin 2017. Et en un an et demi nous avons bien équipé notre petit nid. Nous avous donc plus ou moins tout ce qu’il nous faut.</p>
+                            <p class="text" id="gifts-2">Si vous souhaitez cependant nous offrir quelque chose sachez qu’une cagnotte sera à disposition pendant le marriage. Cette cagnotte nous servira à financer notre voyage de noces au Mexique. Celà nous permettera de :</p>
+                            <ul>
+                                <li class="text" id="gifts-3">D’acheter les billets d’avions</li>
+                                <li class="text" id="gifts-4">Passer une nuit dans un hôtel</li>
+                                <li class="text" id="gifts-5">Faire des activités</li>
+                                <li class="text" id="gifts-6">De nous payer à manger</li>
+                                <li class="text" id="gifts-7">De payer nos déplacements sur place</li>
+                            </ul>
+                            <p class="text" id="gifts-8">Bien évidemment, un petit cadeau personnalisé, nous fera tout aussi plasir.</p>
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#contact">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button--> 
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of gift-->
+
+        <div class="h-full" id="contact">
+            <div class="h-full-inner dimmer right">
+                <div class="row mw-100 no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-right" id="contact-title">Contact</h1>
+                            <h4 class="text text-center text-sm-right" id="contact-1">Mail</h4>
+                            <p class="text text-center text-sm-right" id="contact-2">javisaadwedding@gmail.com</p>
+                            <h4 class="text text-center text-sm-right" id="contact-3">Téléphone Javi</h4>
+                            <p class="text text-center text-sm-right" id="contact-4">+41 79 898 45 55</p>
+                            <h4 class="text text-center text-sm-right" id="contact-5">Téléphone Saad</h4>
+                            <p class="text text-center text-sm-right" id="contact-6">+41 78 825 50 87</p>
+                            <h4 class="text text-center text-sm-right" id="contact-7">Page Facebook</h4>
+                            <p class="text text-center text-sm-right" id="contact-8"><a href="www.facebook.com/javisaadwedding" target="_blank">facebook.com/javisaadwedding</a></p>
+                        </div> <!--end of margin 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of our dream-->
         
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU-U3itYJ6DU0jvPtLReQGOMBY7Q9f5q8&callback=initMap"></script>
         <script src="js/jquery-3.1.1.min.js"></script>
@@ -270,6 +426,7 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
         <script src="js/strings-loader.js"></script>
-        <script src="js/countdown.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/overlay.js"></script>
     </body>
 </html>
