@@ -19,9 +19,9 @@
         {"id": "wedding-3", "text": "Tu ne te trompes pas, nous vivons bien en Suisse, mais ça ne nous à pas empêché de chercher le cadre parfait pour cet évènment. Et crois nous sur parole, tu ne vas pas être décu par notre choix, alors enfile ta plus belle tenue et rejoins nous le 31 Juillet 2019."},
         {"id": "wedding-4", "text": "Parce qu’en plus il faut faire un effort vestimentaire ?"},
         {"id": "wedding-5", "text": "Non mais je rêve..."},
-        {"id": "wedding-6", "text": "Non non, tu ne rêves pas. Nous aimerions faire de belles photos avec nos invité•es et si ça nous amuse beaucoup de t’imaginer habillé•e comme un sac, nous ne sommes pas sûr que tu ais très envie d’être celui•celle dont on se moquera, quand on regardera les photos dans 20 ans. Alors fait un petit effort s’il te plaît..."},
+        {"id": "wedding-6", "text": "Non non, tu ne rêves pas. Nous aimerions faire de belles photos avec nos invité•es et même si ça nous amuse beaucoup de t’imaginer habillé•e comme un sac, nous ne sommes pas sûr que tu ais très envie d’être celui•celle dont on se moquera, quand on regardera les photos dans 20 ans. Alors fait un petit effort s’il te plaît..."},
         {"id": "wedding-7", "text": "OK, Ok... Mais ça ne me dit pas où je vais pouvoir dormir tout ça !"},
-        {"id": "wedding-8", "text": "Ah ça tombe bien que tu dises ça ! Nous avons travaillé pour toi ! Si tu contines d’explorer le site, tu vas tomber sur une carte, préparée avec amour (et beaucoup de patience), qui répertorie tous les endroits, à proximité du mariage, où tu pourras reposer tes jambes, après avoir enflammé le dance floor."},
+        {"id": "wedding-8", "text": "Ah ça tombe bien que tu dises ça ! Nous avons travaillé pour toi ! Si tu continues d’explorer le site, tu vas tomber sur une carte, préparée avec amour (et beaucoup de patience), qui répertorie tous les endroits, à proximité du mariage, où tu pourras reposer tes jambes, après avoir enflammé le dance floor."},
         {"id": "map-title", "text": "La Carte des Logements"},
         {"id": "d-day-title", "text": "Le Jour J"},
         {"id": "d-day-1", "text": "Ok on sait où dormir, mais il a lieu où ce mariage ? Et il se passe quoi le jour J ?"},
@@ -37,9 +37,9 @@
         {"id": "d-day-11", "text": "22H00 – 5H00"},
         {"id": "d-day-12", "text": "Que la soirée commence, on veut tous vous voir en train de vous déhancher jusqu’au boût de la nuit."},
         {"id": "our-dream-title", "text": "Notre rêve"},
-        {"id": "our-dream-1", "text": "Comme tu le sais sûrement, nous sommes de grands rêveurs. On aime souvant imaginer notre futur, s’imaginer à exercer des métiers improbables, ou à réaliser des projets incroyables, à l’autre boût du monde. Ou plus simplement à contruire un grande et belle famille."},
+        {"id": "our-dream-1", "text": "Comme tu le sais sûrement, nous sommes de grands rêveurs. On aime souvant imaginer notre futur, s’imaginer à exercer des métiers improbables, ou à réaliser des projets incroyables à l’autre boût du monde. Ou plus simplement à construire un grande et belle famille."},
         {"id": "our-dream-2", "text": "Nous rêvons aussi de faire le tour du monde, mais comme il nous faudra certainement un peu plus de 80 jours, on devra donc peut-être attendre la retraite… mais on ne perd pas espoir ;)"},
-        {"id": "our-dream-3", "text": "En attendant, et comme il faut bien commencer quelque part, nous avons choisi une destination, qui nous faisait rêver depuis longtemps, pour notre lune de miel. De merveilleux paysages, une culture riche et bien sûr un nourriture délicieuse, c’est le Mexique qui nous a convaincu. Et puis comme tout le monde pense que Saad est mexicain, il faut bien qu'on aille vérifier par nous même s’il n’a pas quelques racines là bas."},
+        {"id": "our-dream-3", "text": "En attendant, et comme il faut bien commencer quelque part, nous avons choisi une destination, qui nous faisait rêver depuis longtemps, pour notre lune de miel. De merveilleux paysages, une culture riche et bien sûr une nourriture délicieuse: c’est le Mexique qui nous a convaincu. Et puis comme tout le monde pense que Saad est mexicain, il faut bien qu'on aille vérifier par nous même s’il n’a pas quelques racines là bas."},
         {"id": "gifts-title", "text": "Les Cadeaux"},
         {"id": "gifts-1", "text": "Ok mais si on veux vous offrir un petit truc on vous offre quoi ?"},
         {"id": "gifts-2", "text": "Comme vous le savez certainement déjà, nous habitons ensemble depuis juin 2017. Et en un an et demi nous avons bien équipé notre petit nid. Nous avous donc plus ou moins tout ce qu’il nous faut."},
@@ -80,6 +80,6 @@
         {"id": "contact-15", "text": "Son téléphone"},
         {"id": "contact-16", "text": "+41 78 821 42 07"},
         {"id": "contact-17", "text": "Rejoins le groupe Facebook"},
-        {"id": "contact-18", "text": "facebook.com/javisaadwedding"}
+        {"id": "contact-18", "text": "https://www.facebook.com/groups/javisaadwedding/"}
     ]
 }
