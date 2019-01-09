@@ -39,6 +39,14 @@ h1 {
     font-family: 'fabfeltscriptbold', cursive;
 }
 
+a {
+    color: #66d1bd;
+}
+
+a:hover {
+    color: #468e80;
+}
+
 /*BUTTON***********************************************************************/
 .btn-container {
     display: flex;
@@ -575,17 +583,6 @@ h1 {
     animation-fill-mode:  forwards;
 }
   
-.nd5{
-    bottom: 210px;
-    right: 30px;
-    
-    background-size: 100%;
-    
-    animation: bounce-out-nds 0.1s linear;
-    animation-delay: 0.08s;
-    animation-fill-mode:  forwards;
-}
-  
 @keyframes bounce-nds{
     from {opacity: 0;}
     to {opacity: 1; transform: scale(1);}
@@ -614,7 +611,7 @@ h1 {
 /*CUSTOM EXTRA SMALL SCREEN****************************************************/
 @media (max-width: 575.98px) {
     .cover {
-        width: 80%;
+        width: 50%;
     }
 
     .cover-inner {
