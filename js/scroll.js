@@ -2,8 +2,8 @@ $(document).ready(function() {
     "use strict";
     SetLanguage("fr");
     
-    var homedist, invitedist, ourstorydist, weddingdist, mapdist, ddaydist,
-    ourdreamdist, giftsdist;
+    var homedist, invitedist, ourstorydist, weddingdist, mapdist, directiondist,
+    ddaydist, ourdreamdist, giftsdist;
     
     const threshold = 50;
     
@@ -19,13 +19,15 @@ $(document).ready(function() {
         ourstorydist = invitedist + $('#our-story').height();
         weddingdist = ourstorydist + $('#wedding').height();
         mapdist = weddingdist + $('#map').height();
-        ddaydist = mapdist + $('#d-day').height();
+        directiondist = mapdist + $('#direction').height();
+        ddaydist = directiondist + $('#d-day').height();
         ourdreamdist = ddaydist + $('#our-dream').height();
         giftsdist = ourdreamdist +$('#gifts').height();
         console.log('Home: ' + homedist + ' | Invite: ' + invitedist
             + ' | Our Story: ' + ourstorydist + ' | Wedding: ' + weddingdist
-            + ' | Map: ' + mapdist + ' | D-Day: ' + ddaydist + ' | Our Dream: '
-            + ourdreamdist + ' | Gifts: ' + giftsdist);
+            + ' | Map: ' + mapdist + ' | Direction: ' + directiondist
+            + ' | D-Day: ' + ddaydist + ' | Our Dream: ' + ourdreamdist
+            + ' | Gifts: ' + giftsdist);
     }
 
     function updateActiveNavItem(positionTop) {
@@ -34,6 +36,8 @@ $(document).ready(function() {
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').removeClass('active');
@@ -43,6 +47,8 @@ $(document).ready(function() {
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').removeClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').removeClass('active');
@@ -52,15 +58,19 @@ $(document).ready(function() {
             $('#gifts-item').addClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').removeClass('active');
-            $('#contact-overlay').removeClass('active');
             $('#home-item').removeClass('active');
 
+            $('#contact-overlay').removeClass('active');
             $('#gifts-overlay').addClass('active');
             $('#our-dream-overlay').removeClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').removeClass('active');
@@ -70,6 +80,8 @@ $(document).ready(function() {
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').addClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').removeClass('active');
@@ -79,15 +91,19 @@ $(document).ready(function() {
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').addClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').removeClass('active');
             $('#home-overlay').removeClass('active');
-        } else if ((positionTop + threshold) >= mapdist) {
+        } else if ((positionTop + threshold) >= directiondist) {
             $('#contact-item').removeClass('active');
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').addClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').removeClass('active');
@@ -97,6 +113,52 @@ $(document).ready(function() {
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').removeClass('active');
             $('#d-day-overlay').addClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
+            $('#wedding-overlay').removeClass('active');
+            $('#our-story-overlay').removeClass('active');
+            $('#invite-overlay').removeClass('active');
+            $('#home-overlay').removeClass('active');
+        } else if ((positionTop + threshold) >= mapdist) {
+            $('#contact-item').removeClass('active');
+            $('#gifts-item').removeClass('active');
+            $('#our-dream-item').removeClass('active');
+            $('#d-day-item').removeClass('active');
+            $('#direction-item').addClass('active');
+            $('#map-item').removeClass('active');
+            $('#wedding-item').removeClass('active');
+            $('#our-story-item').removeClass('active');
+            $('#invite-item').removeClass('active');
+            $('#home-item').removeClass('active');
+
+            $('#contact-overlay').removeClass('active');
+            $('#gifts-overlay').removeClass('active');
+            $('#our-dream-overlay').removeClass('active');
+            $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').addClass('active');
+            $('#map-overlay').removeClass('active');
+            $('#wedding-overlay').removeClass('active');
+            $('#our-story-overlay').removeClass('active');
+            $('#invite-overlay').removeClass('active');
+            $('#home-overlay').removeClass('active');
+        } else if ((positionTop + threshold) >= weddingdist) {
+            $('#contact-item').removeClass('active');
+            $('#gifts-item').removeClass('active');
+            $('#our-dream-item').removeClass('active');
+            $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').addClass('active');
+            $('#wedding-item').removeClass('active');
+            $('#our-story-item').removeClass('active');
+            $('#invite-item').removeClass('active');
+            $('#home-item').removeClass('active');
+
+            $('#contact-overlay').removeClass('active');
+            $('#gifts-overlay').removeClass('active');
+            $('#our-dream-overlay').removeClass('active');
+            $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').addClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').removeClass('active');
@@ -106,6 +168,8 @@ $(document).ready(function() {
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').addClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').removeClass('active');
@@ -115,6 +179,8 @@ $(document).ready(function() {
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').removeClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').addClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').removeClass('active');
@@ -124,6 +190,8 @@ $(document).ready(function() {
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').addClass('active');
             $('#invite-item').removeClass('active');
@@ -133,6 +201,8 @@ $(document).ready(function() {
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').removeClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').addClass('active');
             $('#invite-overlay').removeClass('active');
@@ -142,6 +212,8 @@ $(document).ready(function() {
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').addClass('active');
@@ -150,7 +222,9 @@ $(document).ready(function() {
             $('#contact-overlay').removeClass('active');
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').addClass('active');
@@ -160,6 +234,8 @@ $(document).ready(function() {
             $('#gifts-item').removeClass('active');
             $('#our-dream-item').removeClass('active');
             $('#d-day-item').removeClass('active');
+            $('#direction-item').removeClass('active');
+            $('#map-item').removeClass('active');
             $('#wedding-item').removeClass('active');
             $('#our-story-item').removeClass('active');
             $('#invite-item').removeClass('active');
@@ -169,6 +245,8 @@ $(document).ready(function() {
             $('#gifts-overlay').removeClass('active');
             $('#our-dream-overlay').removeClass('active');
             $('#d-day-overlay').removeClass('active');
+            $('#direction-overlay').removeClass('active');
+            $('#map-overlay').removeClass('active');
             $('#wedding-overlay').removeClass('active');
             $('#our-story-overlay').removeClass('active');
             $('#invite-overlay').removeClass('active');

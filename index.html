@@ -92,7 +92,13 @@
                 <div class="overlay-label scrolling-btn overlay-click" data-id="#wedding" id="mariage-overlay">
                     <p class="text-truncate text" id="wedding-title">Le Mariage</p>
                 </div>
-                <div class="overlay-label scrolling-btn overlay-click" data-id="#d-day" id="jour-j-overlay">
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#map" id="map-overlay">
+                    <p class="text-truncate text" id="map-title">Carte des Logements</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#direction" id="direction-overlay">
+                    <p class="text-truncate text" id="direction-title">Arriver au Château</p>
+                </div>
+                <div class="overlay-label scrolling-btn overlay-click" data-id="#d-day" id="d-day-overlay">
                     <p class="text-truncate text" id="d-day-title">Le Jour J</p>
                 </div>
                 <div class="overlay-label scrolling-btn overlay-click" data-id="#our-dream" id="our-dream-overlay">
@@ -152,6 +158,30 @@
                         <div class="diamond"><div class="diamond-inner"></div></div>
                     </div>
                     <div class="text text-truncate diamond-label" id="wedding-title">Le Mariage</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+
+                <div class="item-container item scrolling-btn" data-id="#map" id="map-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="map-title">La Carte des Logements</div>            
+                </div>
+
+                <div class="item-container">
+                    <div class="diamond-container"><div class="diamond-separator"></div></div>
+                    <div class="diamond-label"></div>
+                </div>
+
+                <div class="item-container item scrolling-btn" data-id="#direction" id="direction-item">
+                    <div class="diamond-container">
+                        <div class="diamond"><div class="diamond-inner"></div></div>
+                    </div>
+                    <div class="text text-truncate diamond-label" id="direction-title">Arriver au Château</div>            
                 </div>
 
                 <div class="item-container">
@@ -309,14 +339,267 @@
                             <iframe id="frame" src="https://snazzymaps.com/embed/99836" width="100%" ></iframe>
                         </div>
                         <div class="btn-container">    
-                            <div class="angle-btn scrolling-btn" data-id="#d-day">
+                            <div class="angle-btn scrolling-btn" data-id="#direction">
                                 <p class="text" id="next">Suivant</p>
                             </div> <!--end of angle button--> 
                         </div> <!--end of button container-->
                     </div> <!--end of col-->
                 </div> <!--end of row-->
             </div> <!--end of dimmer-->
-        </div> <!--end of wedding-->
+        </div> <!--end of map-->
+
+        <div class="h-full" id="direction">
+            <div class="h-full-inner dimmer right">
+                <div class="row no-gutters align-items-center margin-4">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                        <div class="margin-4 padding-4">
+                            <h1 class="text text-center text-sm-right" id="direction-title">Arriver au Château</h1>
+                            <h4 class="text text-center text-sm-right" id="direction-1">Adresse</h4>
+                            <p class="text text-center text-sm-right mb-0" id="direction-2">Les Charlots</p>
+                            <p class="text text-center text-sm-right" id="direction-3">89150 La Belliole</p>
+
+                            <h4 class="text text-center text-sm-right" id="direction-4">Coordonnées</h4>
+                            <p class="text text-center text-sm-right" id="direction-5">48°09’22.50’’N 3°05’44.24 ‘’E</p>
+
+                            <h4 class="text text-center text-sm-right" id="direction-6">GPS</h4>
+                            <div class="row row-eq-height justify-content-center">
+                                <div class="col-12 col-sm-11">
+                                    <p class="text text-center text-sm-right" id="direction-7">Taper d’abord « Saint-Valérien 89150 » comme première adresse (il est très important de faire cette première étape, autrement le GPS va prendre un raccourci qui n’existe plus).</p>
+                                </div>
+                                <div class="col-1 d-none d-sm-block">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-12 col-sm-11">
+                                    <p class="text text-center text-sm-right" id="direction-8">Puis ensuite « Château de Séréville » ou « Les Charlots 89150 La Belliole » comme deuxième adresse.</p>
+                                </div>
+                                <div class="col-1 d-none d-sm-block">
+                                    <div class="arrival-dot"></div>
+                                </div>
+                            </div> <!-- end of row -->
+                            
+                            <h4 class="text text-center text-sm-right" id="direction-9">En Voiture</h4>
+                            <div id="by-car">
+                                <div class="row row-eq-height justify-content-center collapse-a" data-toggle="collapse" data-target="#a6-nord" aria-expanded="false" aria-controls="a6-nord">
+                                    <div class="col-12 col-sm-11">
+                                        <div class="d-flex justify-content-center justify-content-sm-right d-sm-block">
+                                            <h5 class="text text-center text-sm-right" id="direction-10">Autoroute A6 depuis Paris ou Orly</h5>
+                                            <img class="d-block ml-2 d-sm-none collapse-icon" src="images/collapse-btn.svg"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <img class="collapse-icon" src="images/collapse-btn.svg"/>
+                                    </div>
+                                </div> <!-- end of row-->
+                                <div class="row row-eq-height justify-content-center collapse" aria-labelledby="headingOne" data-parent="#by-car" id="a6-nord">
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-11">Sortir à la sortie Nemours</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-12">Après la barrière de péage de Nemours, aller tout droit à chacun des deux ronds-points (attention : ne pas rentrer dans Nemours)</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-13">Au troisième rond-point, tourner à gauche direction Sens</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-14">Après être passé sous l’A6, 500m plus loin, continuer environ 30km jusqu’à Saint Valérien (le seul autre village rencontré sera Chéroy)</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-15">A Saint Valérien, à hauteur de l’église, tourner à droite dans la petite rue nommée « rue d’Enfer » où un panneau indique : La Belliole.</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-16">Environ 1,5km plus loin, après la forêt, longer le champ et tout de suite à la fin de celui-ci, à votre droite vous trouverez un panneau en bois blanc mentionnant : Séréville. Vous êtes arrivés !</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="arrival-dot"></div>
+                                    </div>
+                                    <p class="text text-center text-sm-right" id="direction-17">PS : Si vous atteignez La Belliole, c’est que vous avez manqué l’entrée du Château ! Faites demi-tour.</p>
+                                </div> <!-- end of row -->
+                            
+                                <div class="row row-eq-height justify-content-center collapse-a" data-toggle="collapse" data-target="#a6-sud" aria-expanded="false" aria-controls="a6-sud">
+                                    <div class="col-12 col-sm-11">
+                                        <div class="d-flex justify-content-center justify-content-sm-right d-sm-block">
+                                            <h5 class="text text-center text-sm-right" id="direction-18">Autoroute A6 depuis le Sud</h5>
+                                            <img class="d-block ml-2 d-sm-none collapse-icon" src="images/collapse-btn.svg"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <img class="collapse-icon" src="images/collapse-btn.svg"/>
+                                    </div>
+                                </div> <!-- end of row -->
+                                <div class="row row-eq-height justify-content-center collapse" aria-labelledby="headingOne" data-parent="#by-car" id="a6-sud">
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-19">800m avant la sortie Courtenay, prendre l’embranchement vers l’autoroute A19 direction Sens</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-20">Sortir à la sortie suivante, sortie Saint-Valérien</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-13">Au troisième rond-point, tourner à gauche direction Sens</p>
+                                    </div>                                
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-21">Après le péage et le rond-point, prendre le direction Saint-Valérien (Si votre GPS vous fait prendre une autre route, ne le suivez pas)</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-15">A Saint Valérien, à hauteur de l’église, tourner à droite dans la petite rue nommée « rue d’Enfer » où un panneau indique : La Belliole.</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-16">Environ 1,5km plus loin, après la forêt, longer le champ et tout de suite à la fin de celui-ci, à votre droite vous trouverez un panneau en bois blanc mentionnant : Séréville. Vous êtes arrivés !</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="arrival-dot"></div>
+                                    </div>
+                                    <p class="text text-center text-sm-right" id="direction-17">PS : Si vous atteignez La Belliole, c’est que vous avez manqué l’entrée du Château ! Faites demi-tour.</p>
+                                </div> <!-- end of row -->            
+                            
+                                <div class="row row-eq-height justify-content-center collapse-a" data-toggle="collapse" data-target="#a19-est" aria-expanded="false" aria-controls="a19-est">
+                                    <div class="col-12 col-sm-11">
+                                        <div class="d-flex justify-content-center justify-content-sm-right d-sm-block">
+                                            <h5 class="text text-center text-sm-right" id="direction-22">Autoroute A5 ou A19 depuis l'Est</h5>
+                                            <img class="d-block ml-2 d-sm-none collapse-icon" src="images/collapse-btn.svg"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <img class="collapse-icon" src="images/collapse-btn.svg"/>
+                                    </div>
+                                </div> <!-- end of row-->
+                                <div class="row row-eq-height justify-content-center collapse" aria-labelledby="headingOne" data-parent="#by-car" id="a19-est">
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-23">Quitter la A5 et prendre l’autoroute A19</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-24">Après avoir passé la sortie Sens, sortez à la prochaine : Saint-Valérien</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-21">Après le péage et le rond-point, prendre le direction Saint-Valérien (Si votre GPS vous fait prendre une autre route, ne le suivez pas)</p>
+                                    </div>                                
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-15">A Saint Valérien, à hauteur de l’église, tourner à droite dans la petite rue nommée « rue d’Enfer » où un panneau indique : La Belliole.</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-16">Environ 1,5km plus loin, après la forêt, longer le champ et tout de suite à la fin de celui-ci, à votre droite vous trouverez un panneau en bois blanc mentionnant : Séréville. Vous êtes arrivés !</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="arrival-dot"></div>
+                                    </div>
+                                    
+                                    <p class="text text-center text-sm-right" id="direction-17">PS : Si vous atteignez La Belliole, c’est que vous avez manqué l’entrée du Château ! Faites demi-tour.</p>
+                                    
+                                </div> <!-- end of row -->
+                            
+                                <div class="row row-eq-height justify-content-center collapse-a" data-toggle="collapse" data-target="#a19-ouest" aria-expanded="false" aria-controls="a19-ouest">
+                                    <div class="col-12 col-sm-11">
+                                        <div class="d-flex justify-content-center justify-content-sm-right d-sm-block">
+                                            <h5 class="text ml-sm-auto text-center text-sm-right" id="direction-25">Autoroute A19 depuis l'Ouest</h5>
+                                            <img class="d-block ml-2 d-sm-none collapse-icon" src="images/collapse-btn.svg"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <img class="collapse-icon" src="images/collapse-btn.svg"/>
+                                    </div>
+                                </div> <!-- end of row -->
+                                <div class="row row-eq-height justify-content-center collapse" aria-labelledby="headingOne" data-parent="#by-car" id="a19-ouest">
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-26">Après avoir passé la sortie Courtenay-A6 Paris Lyon, sortez à la suivante: Saint-Valérien</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-21">Après le péage et le rond-point, prendre le direction Saint-Valérien (Si votre GPS vous fait prendre une autre route, ne le suivez pas)</p>
+                                    </div>                              
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-15">A Saint Valérien, à hauteur de l’église, tourner à droite dans la petite rue nommée « rue d’Enfer » où un panneau indique : La Belliole.</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="dot"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-12 col-sm-11">
+                                        <p class="text text-center text-sm-right" id="direction-16">Environ 1,5km plus loin, après la forêt, longer le champ et tout de suite à la fin de celui-ci, à votre droite vous trouverez un panneau en bois blanc mentionnant : Séréville. Vous êtes arrivés !</p>
+                                    </div>
+                                    <div class="col-1 d-none d-sm-block">
+                                        <div class="arrival-dot"></div>
+                                    </div>
+                                    <p class="text text-center text-sm-right" id="direction-17">PS : Si vous atteignez La Belliole, c’est que vous avez manqué l’entrée du Château ! Faites demi-tour.</p>
+                                </div> <!-- end of row -->
+                            </div> <!-- end of by car -->
+
+                            <p class="text text-center text-sm-right mb-0 mt-4" id="direction-27">Si vous venez en voiture, garez-vous dans parking dédié aux invités</p>
+                            <p class="text text-center text-sm-right mb-0" id="direction-28">Si vous venez en taxi, entrez par l’entrée principale</p>
+                            <p class="text text-center text-sm-right mb-0" id="direction-29">Bonne Route !</p>
+                            
+                            <div class="btn-container">    
+                                <div class="angle-btn scrolling-btn" data-id="#d-day">
+                                    <p class="text" id="next">Suivant</p>
+                                </div> <!--end of angle button--> 
+                            </div> <!--end of button container-->
+                        </div> <!--end of margin 4-->
+                    </div> <!--end of col-->
+                </div> <!--end of row-->
+            </div> <!--end of dimmer-->
+        </div> <!--end of direction-->
 
         <div class="h-full" id="d-day">
             <div class="h-full-inner dimmer left">

@@ -151,7 +151,7 @@ a:hover {
 
 .side-navbar:hover,
 .side-navbar:focus {
-    width: 200px;
+    width: 270px;
 
     background-color: rgba(255, 255, 255, 1);
 }
@@ -746,6 +746,15 @@ a:hover {
     background-size: cover;
 }
 
+#direction {
+    z-index: 0;
+
+    background-image: url("../images/direction.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #d-day {
     z-index: 0;
     
@@ -780,4 +789,60 @@ a:hover {
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin-top: 8px;
+    background-color: #AAAAAA;
+    border-radius: 50%;
+}
+
+.line {
+    background-color: rgba(255,255,255,.3);
+    height: 100%;
+    margin-top:-3px;
+    margin-left: 3px;
+    width: 2px;
+}
+
+.arrival-dot {
+    height: 12px;
+    width: 12px;
+    margin-left: -2px;
+    margin-top: 8px;
+    background-color: #468e80;
+    border-radius: 50%;
+
+    transition: all .2s;
+    -ms-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.collapse-icon {
+    margin-left: -5px;
+    width: 20px;
+    height: 20px;
+}
+
+.collapse-a {
+    color: #66d1bd;
+    cursor: pointer;
+}
+
+.collapse-a:hover,
+.collapse-a:focus {
+    color: #50a091;
+}
+
+.collapse-a img {
+    opacity: 1;
+}
+
+.collapse-a:hover img,
+.collapse-a:focus img {
+    opacity: .5;
 }
